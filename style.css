@@ -353,7 +353,7 @@ main {
 /* Footer styles */
 .footer {
     background: #949698;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 10px;
     text-align: center;
     font-size: 12px;
