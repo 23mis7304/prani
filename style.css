@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav bar */
+header{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.manage_all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.images{
+    width: 300px;
+    height: 278px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#Hospital{
+    
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px hsl(240, 10%, 10%);
+
+
+    
+}
+#Hospital_name{
+    font-size: large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#Bank{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px hsl(240, 10%, 10%);
+    background-color: white;
+    
+}
+#Bank_name{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+
+
+}
+
+#INDUSTRY{
+   
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px hsl(240, 10%, 10%);
+    background-color: white;
+    
+}
+#Industry_name{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+
+}
+
+#VEHICLES{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px hsl(240, 8%, 3%);
+    background-color: white;
+    
+}
+#Vehicles_name{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: hsl(120, 64%, 48%);
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+ul li a:hover{
+    background: hsl(204, 70%, 43%);
+    transition: 1s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1270px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 25px ;
+        font-weight: 600;
+    }
+  
+}
+
+@media (max-width:1100px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 21px ;
+        font-weight: 600;
+    }
+   
+}
+
+@media (max-width:1000px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 19px ;
+        font-weight: 600;
+    }
+   
+    
+}
+
+@media (max-width:950px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 17px ;
+        font-weight: 600;
+    }
+  
+    
+}
+
+@media (max-width:870px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 15px ;
+        font-weight: 600;
+    }    
+}
+
+@media (max-width:800px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 13px ;
+        font-weight: 600;
+    }    
+}
+
+@media (max-width:750px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 10px ;
+        font-weight: 600;
+    }    
+}
+
+@media (max-width:700px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 8px ;
+        font-weight: 600;
+    }    
+}
+
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 8px ;
+        font-weight: 600;
+    }    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px) {
+    .logo{
+        color: white;
+        position: relative;
+        left: 10px;
+        font-size: 10px ;
+        font-weight: 600;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure the body and html cover the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should fill the available space */
+main {
+    flex: 1;
+}
+
+/* Footer styles */
+.footer {
+    background: #949698;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-container p {
+    margin: 5px 0;
+    line-height: 1;
+}
+
+.footer-container p:first-child {
+    font-weight: bold;
+    color: white; /* Highlighted color for copyright text */
+}
+

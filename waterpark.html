@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="waterpark.css">
+    <link rel="icon" type="image/png" href="water-slide.png"> 
+    
+</head>
+<body>
+    <header>
+        <h1 style="color:hsl(0, 0%, 90%);font-style: normal;font-weight: bolder;">WATER PARKS INFO</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <label for="city" >Select city</label>
+        <select id="city" onchange="showCityContent()" style="width: 150px;margin-left: 10px;">
+            <option value="">--Select--</option>
+            <option value="hyderabad">HYDERABAD</option>
+            <option value="vijayawada">VIJAYAWADA</option>
+            <option value="chennai">CHENNAI</option>
+        </select><br><br>
+    
+     
+    
+        <br><br>
+    
+        <!-- Sections for city-disease combinations -->
+        <section id="hyderabad" style="display: none;">
+            <h1 style="text-align: center;"> Water Parks in Hyderabad</h1><br><br>
+            <ul>
+                <div><h2> Jalavihar Water Park</h2> <br>
+                        <p><h4>Address :</h4><address>Necklace Road, 22/9, PV Narasimha Rao Marg, Hyderabad, Telangana 500004</address></p>
+                        <p><span class="bold">Rating :</span> 4.0</p>
+                        <p ><span class="bold">Open hours :</span> 11 am- 7 pm</p>
+                        <a href="https://maps.app.goo.gl/FT1XfHBoEnNwAeGz7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Scape Water Park</h2> <br>
+                    <p><h4>Address :</h4><address> Siddulagutta Rd, beside Fort Grand, Shamshabad, Hyderabad, Telangana 501218</address></p>
+                    <p><span class="bold">Rating :</span> 4.0</p>
+                    <p ><span class="bold">Open hours :</span> 11 am- 6 pm</p>
+                    <a href="https://maps.app.goo.gl/HkYwjaiQAMnpeY6X8" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Ocean Park</h2> <br>
+                    <p><h4>Address :</h4><address> Osman Sagar Rd, near CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY, Kokapet, Gandipet, Hyderabad, Telangana 500075 </address></p>
+                    <p> <span class="bold">Rating :</span> 3.9</p>
+                    <p ><span class="bold">Open hours :</span> 11 am- 7 pm</p>
+                    <a href="https://maps.app.goo.gl/gGpbPF9bDFWZr5Nz8" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+       
+
+
+        <section id="vijayawada" style="display: none;">
+            <h1 style="text-align: center;"> Water Parks in Vijayawada</h1><br><br>
+            <ul>
+                <div><h2> Vijayawada land</h2> <br>
+                        <p><h4>Address :</h4><address>  Pipula Road, Junction, Ajit Singh Nagar, Vijayawada, Andhra Pradesh 520015</address></p>
+                        <p><span class="bold">Rating :</span> 3.5</p>
+                        <p ><span class="bold">Open hours :</span> 11 am- 5 pm</p>
+                        <a href="https://maps.app.goo.gl/GBJLMpEPWivjCAdX6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Bhavani Island Park</h2> <br>
+                    <p><h4>Address :</h4><address> GH8R+R5G, Vijayawada, Andhra Pradesh 521225 Vijayawada</address></p>
+                    <p><span class="bold">Rating :</span> 4.1</p>
+                    <p ><span class="bold">Open hours :</span> 8 am- 8 pm</p>
+                    <a href="https://maps.app.goo.gl/bNSUh4hDg95D4sqU7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> V-drops</h2> <br>
+                    <p><h4>Address :</h4><address> 194, Rd Number 4, Srinivasa Nagar Bank Colony, Vijayawada, Andhra Pradesh 520008</address></p>
+                    <p><span class="bold">Rating :</span> 4.0</p>
+                    <p ><span class="bold">Open hours :</span> 10 am- 6pm</p>
+                    <a href="https://maps.app.goo.gl/di9vQKJdG75yCY4y7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+
+
+        <section id="chennai" style="display: none;">
+            <h1 style="text-align: center;"> BANKS in Chennai</h1><br><br>
+            <ul>
+                <div><h2> VGP Universal Kingdom</h2> <br>
+                        <p><h4>Address :</h4><address> SH 49, Injambakkam, Chennai, Tamil Nadu 600115</address></p>
+                        <p><span class="bold">Rating :</span> 4.0</p>
+                        <p ><span class="bold">Open hours :</span> 10.30 am- 8pm</p>
+                        <a href="hhttps://maps.app.goo.gl/F52eyaXyJPBZn2Fi7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> MGM Dizzee World</h2> <br>
+                    <p><h4>Address :</h4><address> 1/74, SH 49, Muthukadu, Chennai, Tamil Nadu 600112</address></p>
+                    <p><span class="bold">Rating :</span> 4.0</p>
+                    <p ><span class="bold">Open hours :</span> 10.30 am- 6pm</p>
+                    <a href="https://maps.app.goo.gl/PHUXmpgBmwkVU8Pm7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Tirusulam Oorani</h2> <br>
+                    <p><h4>Address :</h4><address>  Indiranagar, Tirusulam, Chennai, St.Thomas Mount-cum-Pallavaram, Tamil Nadu 600043</address></p>
+                    <p><span class="bold">Rating :</span> 4.2</p>
+                    <p ><span class="bold">Open hours :</span> 11 am- 6pm</p>
+                    <a href="https://maps.app.goo.gl/xgeLFtmSVazYaHa28" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+
+    </main>
+    
+
+
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="waterpark.js"></script>
+</body>
+</html>

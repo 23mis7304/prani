@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="hosp.css">
+    <link rel="icon" type="image/png" href="hospital.png"> 
+    
+</head>
+<body>
+    <header>
+        <h1 style="color:hsl(0, 0%, 90%);font-style: normal;font-weight: bolder;">HOSPITALS INFO</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <label for="city" >Select city</label>
+        <select id="city" onchange="showCityContent()" style="width: 150px;margin-left: 10px;">
+            <option value="">--Select--</option>
+            <option value="hyderabad">HYDERABAD</option>
+            <option value="vijayawada">VIJAYAWADA</option>
+            <option value="chennai">CHENNAI</option>
+        </select><br><br>
+    
+        <label for="disease">Select type</label>
+        <select id="disease" onchange="showCityContent()" style="width: 150px;margin-left: 4px;">
+            <option value="">--Select--</option>
+            <option value="eye">EYE</option>
+            <option value="nose">NOSE</option>
+            <option value="ears">EARS</option>
+        </select>
+    
+        <br><br>
+    
+        <!-- Sections for city-disease combinations -->
+        <section id="hyderabad_eye" style="display: none;">
+            <h1 style="text-align: center;">Eye Hospitals in Hyderabad</h1><br><br>
+            <ul>
+                <div><h2> Win Vision Eye Hospital</h2> <br>
+                        <p><h4>Address :</h4><address> 6-3-868, 2, Greenlands Rd, Greenlands, Begumpet, Hyderabad, Telangana 500016</address></p>
+                        <p ><span class="bold">Rating :</span> 4.9</p>
+                        <a href="https://maps.app.goo.gl/Mx2fGjnD35caXD7GA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Sri Shankara Nethralaya Eye Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> 1-116/1, NH 65, opposite KFC, Friends Colony, Indira Nagar Colony, Miyapur, Hyderabad, Telangana 500049</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/tK3Rrzw5UQpKvhJR6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Smartvision Eye Hospitals</h2> <br>
+                    <p><h4>Address :</h4><address> Besides Ratnadeep Supermarket, Plot No 143, Srinagar Colony Main Rd, Srinagar Colony, Sri Nagar Colony, Venkateshwara Hills, Banjara Hills, Hyderabad, Telangana 500073</address></p>
+                    <p> <span class="bold">Rating :</span> 4.9</p>
+                    <a href="https://maps.app.goo.gl/jZhrN6aitEN3wRWWA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+        <section id="hyderabad_nose" style="display: none;">
+            <h1 style="text-align: center;">Nose Hospitals in Hyderabad</h1><br><br>
+            <ul>
+                <div><h2> MicroCare ENT Super Speciality Hospital</h2> <br>
+                        <p><h4>Address :</h4><address>MIG: 244 & 245 Road No 4, Remedy Hospital Line, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072</address></p>
+                        <p><span class="bold">Rating :</span> 4.6</p>
+                        <a href="https://maps.app.goo.gl/oiz1Pd57aGJj7y7DA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Asian ENT Care Centre</h2> <br>
+                    <p><h4>Address :</h4><address> 6-3-871 snehalatha, Greenlands Rd, near by pulla reddy sweets, beside Vivekananda hospital, Punjagutta Officers Colony, Begumpet, Hyderabad, Telangana 500016</address></p>
+                    <p><span class="bold">Rating :</span>4.5</p>
+                    <a href="https://maps.app.goo.gl/y5JGCz3uhgoam2at8" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> MagnasV ENT Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> Manikanta Crown Complex, 18-79, Dilsukh Nagar Main Rd, beside Indian Bank, Dilsukhnagar, Hyderabad, Telangana 500060</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/ERx7SZQYvbfhyDSq6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+        <section id="hyderabad_ears" style="display: none;">
+            <h1 style="text-align: center;">Nose Hospitals in Hyderabad</h1><br><br>
+            <ul>
+                <div><h2> Dr Rao's ENT Superspeciality Hospital</h2> <br>
+                        <p><h4>Address :</h4><address>1/2 RT, Temple Rd, opp. Mosque, Punjagutta, Hyderabad, Telangana 500008</address></p>
+                        <p><span class="bold">Rating :</span> 4.6</p>
+                        <a href="https://maps.app.goo.gl/9JkZXpQ6cJhnpcM58" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Asian ENT Care Centre</h2> <br>
+                    <p><h4>Address :</h4><address> 6-3-871 snehalatha, Greenlands Rd, near by pulla reddy sweets, beside Vivekananda hospital, Punjagutta Officers Colony, Begumpet, Hyderabad, Telangana 500016</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/y5JGCz3uhgoam2at8" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Government ENT Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> Bank St, Opp SBI Main Branch, Troop Bazaar, Koti, Hyderabad, Telangana 500095</address></p>
+                    <p><span class="bold">Rating :</span> 3.8</p>
+                    <a href="https://maps.app.goo.gl/jZhrN6aitEN3wRWWA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+    
+
+
+        <section id="vijayawada_eye" style="display: none;">
+            <h1 style="text-align: center;">Eye Hospitals in Vijayawada</h1><br><br>
+            <ul>
+                <div><h2> Smartvision Eye Hospitals</h2> <br>
+                        <p><h4>Address :</h4><address> 29-28, Kovelamudivari Street, near Anu Hospital, Suryaraopeta, Vijayawada, Andhra Pradesh 520002</address></p>
+                        <p><span class="bold">Rating :</span> 4.9</p>
+                        <a href="https://maps.app.goo.gl/TdpdJzdznHWw8jcDA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Maxivision Super Speciality Eye Hospitals</h2> <br>
+                    <p><h4>Address :</h4><address> 3rd Sri Krishna Sai Bhavan 40-1, 48, MG Rd, opp. D.V.Manor Hotel, Labbipet, Vijayawada, Andhra Pradesh 520010</address></p>
+                    <p><span class="bold">Rating :</span> 4.8</p>
+                    <a href="https://maps.app.goo.gl/fBmyVffGGmyzrabZ6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Sandhya Eye Hospitals</h2> <br>
+                    <p><h4>Address :</h4><address> 29-13-90, Kaleswararao Rd, opposite Central Bank, Suryaraopeta, Governor Peta, Vijayawada, Andhra Pradesh 520002</address></p>
+                    <p><span class="bold">Rating :</span> 4.8</p>
+                    <a href="https://maps.app.goo.gl/di9vQKJdG75yCY4y7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+        <section id="vijayawada_nose" style="display: none;">
+            <h1 style="text-align: center;">Nose Hospitals in Vijayawada</h1><br><br>
+            <ul>
+                <div><h2> Sai Krishna ENT Hospital</h2> <br>
+                        <p><h4>Address :</h4><address> Shop No. 29-12-36 Venkataratnam Street, Nakkala Rd, Suryaraopeta, Governor Peta, Vijayawada, Andhra Pradesh 520002</address></p>
+                        <p><span class="bold">Rating :</span> 4.5</p>
+                        <a href="https://maps.app.goo.gl/NG3VsKpVQkznh1xWA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Naveen ENT Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> Dornakal Rd, Surya Rao Pet, Vijayawada, Andhra Pradesh 520002</address></p>
+                    <p><span class="bold">Rating :</span>4.5</p>
+                    <a href="https://maps.app.goo.gl/AypmjdbGDkqex1ge9" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Vijaywada Ent and Multispeciality Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> 29-8-3 chilukudurgaiah street, Nakkala Rd, Suryaraopeta, Vijayawada, Andhra Pradesh 520002</address></p>
+                    <p><span class="bold">Rating :</span>3.6</p>
+                    <a href="https://maps.app.goo.gl/HGfVTSAqsdamqcpaA" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+    
+        <section id="vijayawada_ears" style="display: none;">
+            <h1 style="text-align: center;">Ear Hospitals in Vijayawada</h1><br><br>
+            <ul>
+                <div><h2> Hearzap Smart Hearing Aids - Suryaraopet</h2> <br>
+                        <p><h4>Address :</h4><address> D. No. 30, 22-9, Eluru Rd, Near Vijaya Talkies, Durga Agraharam, Suryaraopeta, Governor Peta, Vijayawada, Andhra Pradesh 520002</address></p>
+                        <p><span class="bold">Rating :</span> 4.9</p>
+                        <a href="https://maps.app.goo.gl/cxucS289LNwoXXct6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Vijaywada Ent and Multispeciality Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> 29-8-3 chilukudurgaiah street, Nakkala Rd, Suryaraopeta, Vijayawada, Andhra Pradesh 520002</address></p>
+                    <p><span class="bold">Rating :</span> 3.6</p>
+                    <a href="https://maps.app.goo.gl/tK3Rrzw5UQpKvhJR6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Sagar ENT - Head & Neck Super Speciality Hospital</h2> <br>
+                    <p><h4>Address :</h4><address>D.No:29-28, 1-16, Kovelamudivari Street, New Giri Puram, Suryaraopeta, Vijayawada, Andhra Pradesh 5200023</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/iN6v2zJUKQ5ngtkE8" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+
+
+        <section id="chennai_eye" style="display: none;">
+            <h1 style="text-align: center;">Eye Hospitals in Chennai</h1><br><br>
+            <ul>
+                <div><h2> An-Noor Eye Hospital</h2> <br>
+                        <p><h4>Address :</h4><address> 57, Vepery High Rd, opp. Veterinary Collage, Periamet, Vepery, Park Town, Chennai, Tamil Nadu 600003</address></p>
+                        <p><span class="bold">Rating :</span> 4.8</p>
+                        <a href="https://maps.app.goo.gl/jGfBzqPC72MGA2vW9" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Sundar Eye Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> Roundtana, bus stop, W-98, 2nd Ave, opposite Nalli, W Block, Anna Nagar, Chennai, Tamil Nadu 600040</address></p>
+                    <p><span class="bold">Rating :</span> 4.4</p>
+                    <a href="https://maps.app.goo.gl/D3BXJsCL4qZhmEvX9" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> SDr.Ashok Eye Hospital</h2> <br>
+                    <p><h4>Address :</h4><address> 3rd Floor, Ramaniyam Isha, Old, 2nd St, opposite Hotel Sangeetha 11, Customs Colony, Jothi Nagar, Thoraipakkam, Tamil Nadu 600097</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/q5JBT9aNUDTq4qdr7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+
+        <section id="chennai_nose" style="display: none;">
+            <h1 style="text-align: center;">Nose Hospitals in Chennai</h1><br><br>
+            <ul>
+                <div><h2> Sinus and Nose Hospital Chennai</h2> <br>
+                        <p><h4>Address :</h4><address> No. 35A, Santhome High Rd, Santhome, Mylapore, Chennai, Tamil Nadu 600004</address></p>
+                        <p><span class="bold">Rating :</span> 3.6</p>
+                        <a href="https://maps.app.goo.gl/jGYaJUfXQfFP8Yb46" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> KKR ENT HOSPITAL & RESEARCH INSTITUTE</h2> <br>
+                    <p><h4>Address :</h4><address> 274, Poonamallee High Rd, opp. KMC Hospital, Kilpauk, Chennai, Tamil Nadu 600010</address></p>
+                    <p><span class="bold">Rating :</span> 4.3</p>
+                    <a href="https://maps.app.goo.gl/zhAurm5P1D6gcCSu7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Ramani Hospital</h2> <br>
+                    <p><h4>Address :</h4><address>47, Kamarajar Salai, Sector 10, Sector 13, Ashok Nagar, Chennai, Tamil Nadu 600083</address></p>
+                    <p><span class="bold">Rating :</span> 4.5</p>
+                    <a href="https://maps.app.goo.gl/fVBnyzvGy4SDUTMs7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+            </ul>
+        </section>
+    
+        <section id="chennai_ears" style="display: none;">
+            <h1 style="text-align: center;">Ear Hospitals in Chennai</h1><br><br>
+            <ul>
+                <div><h2> Iswarya Hospital - OMR</h2> <br>
+                        <p><h4>Address :</h4><address> 110, Rajiv Gandhi Salai, OMR, Kottivakkam, Chennai, Tamil Nadu 600096</address></p>
+                        <p><span class="bold">Rating :</span> 4.9</p>
+                        <a href="https://maps.app.goo.gl/CyjQwfnUq2cSGQ1K6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                        <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> KKR ENT HOSPITAL & RESEARCH INSTITUTE</h2> <br>
+                    <p><h4>Address :</h4><address> 274, Poonamallee High Rd, opp. KMC Hospital, Kilpauk, Chennai, Tamil Nadu 600010</address></p>
+                    <p><span class="bold">Rating :</span> 4.3</p>
+                    <a href="https://maps.app.goo.gl/zhAurm5P1D6gcCSu7" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+
+                <div><h2> Krishna EYE and ENT Hospital</h2> <br>
+                    <p><h4>Address :</h4><address>9, Burkit Rd, CIT Nagar East, T. Nagar, Chennai, Tamil Nadu 600017</address></p>
+                    <p><span class="bold">Rating :</span> 4.3</p>
+                    <a href="https://maps.app.goo.gl/9hXP5UGZiq1RuFpV6" target="_blank" style="color: hsl(0, 4%, 52%);">Location</a>
+                    <!-- <img src="win-vision-eye-hospitals-hyderabad.jpg" style="height: 150px ;position: relative;left: 1000px;top: 0;"> -->
+                </div><br>
+        </section>
+    
+
+    </main>
+    
+
+
+    <footer>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="hospjs.js"></script>
+</body>
+</html>
